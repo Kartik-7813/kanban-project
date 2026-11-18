@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KanbanDesk - Web-Based Kanban Task Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+<header class="navbar">
+    <h1 class="logo">KanbanDesk</h1>
+    <button class="add-task" id="toggle-modal">
+        Add New Task
+    </button>
+</header>
+
+<main class="board">
+    <section id="to-do" class="task-column">
+        <div class="task-heading">
+            <span>To Do</span>
+            <span class="right-heading">0</span>
+        </div>
+        <div class="task-list"></div>
+    </section>
+
+    <section id="in-progress" class="task-column">
+        <div class="task-heading">
+            <span>In Progress</span>
+            <span class="right-heading">0</span>
+        </div>
+        <div class="task-list"></div>
+    </section>
+
+    <section id="done" class="task-column">
+        <div class="task-heading">
+            <span>Done</span>
+            <span class="right-heading">0</span>
+        </div>
+        <div class="task-list"></div>
+    </section>
+</main>
+
+<div class="modal add-new-task">
+    <div class="bg"></div>
+
+    <div class="modal-content">
+        <input placeholder="Enter Task Title" type="text" id="task-title">
+        <textarea placeholder="Enter Task Description" id="task-description"></textarea>
+        <button id="add-new-task">Add Task</button>
+    </div>
+</div>
+
+</body>
+</html>
